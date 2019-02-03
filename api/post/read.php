@@ -43,7 +43,7 @@ if($num > 0) {
 
         array_push($posts_arr['data'], $post_item);
     }
-
+    
     // Turn into JSON
 
     echo json_encode($posts_arr);
