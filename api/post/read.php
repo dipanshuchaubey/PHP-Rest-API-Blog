@@ -1,7 +1,6 @@
 <?php
 
 //Headers
-
 header('Acess-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
@@ -22,6 +21,7 @@ $num = $result->rowCount();
 
 // check if any posts
 if($num > 0) {
+
     // Post array
     $posts_arr = array();
     $posts_arr['data'] = array();
@@ -40,12 +40,10 @@ if($num > 0) {
         );
 
         // Pust to "data"
-
         array_push($posts_arr['data'], $post_item);
     }
 
     // Turn into JSON
-
     echo json_encode($posts_arr);
 
 
