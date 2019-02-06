@@ -163,8 +163,7 @@ class Post {
         if($stmt->execute()) {
             return true;
         }
-
-        // Print error
+        // Prints error
         print_r("Error");
 
         return false;
